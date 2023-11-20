@@ -11,13 +11,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <body data-bs-theme="dark">
-      <Navbar />
-      <div className="row mt-5">
-        <App />
-        <Content />
-      </div>
-    </body>
+    <Navbar />
+    <div className="row mt-5">
+      <App />
+      <Content />
+    </div>
   </React.StrictMode>
 );
 
