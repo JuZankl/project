@@ -5,7 +5,7 @@ function Content() {
   return (
     <div
       data-bs-smooth-scroll="true"
-      className="bg-body-tertiary rounded-2 col-8"
+      className="bg-body-tertiary rounded-2 col-7"
     >
       <h1>Aperiendum est igitur, quid sit voluptas;</h1>
 
