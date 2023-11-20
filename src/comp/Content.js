@@ -4,11 +4,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 function Content() {
   return (
     <div
-      data-bs-spy="scroll"
-      data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example bg-body-tertiary p-3 rounded-2 col-8"
-      tabindex="0"
+      className="bg-body-tertiary rounded-2 col-8"
     >
       <h1>Aperiendum est igitur, quid sit voluptas;</h1>
 
