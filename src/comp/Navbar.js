@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a href="https://github.com/JuZankl" target="_blank">
+        <a href="https://github.com/JuZankl" target="_blank" rel="noreferrer">
           <svg
             width="30"
             height="30"
@@ -35,13 +35,20 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="http://localhost:3000/project"
+              >
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
+              <a
+                className="nav-link"
+                href="http://localhost:3000/project/dashboard"
+              >
+                Achievements
               </a>
             </li>
             <li className="nav-item dropdown">

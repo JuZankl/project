@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import Content from "./comp/Content";
 import Navbar from "./comp/Navbar";
+import Impressum from "./comp/Impresum";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -13,11 +13,9 @@ root.render(
   <React.StrictMode>
     <div className="container text-center">
       <Navbar />
-      <div className="row mt-5">
-        <App />
-        <Content />
-      </div>
+      <Content />
     </div>
+    <Impressum />
   </React.StrictMode>
 );
 
