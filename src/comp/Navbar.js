@@ -2,6 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function Navbar() {
+  var urlproject = `${window.location.origin}/project`;
+  var urlachievements = `${window.location.origin}/project?page=dashboard`;
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -38,16 +41,13 @@ function Navbar() {
               <a
                 className="nav-link active"
                 aria-current="page"
-                href="http://localhost:3000/project"
+                href={urlproject}
               >
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="http://localhost:3000/project/dashboard"
-              >
+              <a className="nav-link" href={urlachievements}>
                 Achievements
               </a>
             </li>

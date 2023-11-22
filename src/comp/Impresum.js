@@ -10,47 +10,41 @@ function Impressum() {
         src={Profile}
         className="col-6 img-fluid d-none d-md-block"
         style={{ maxWidth: "20%", maxHeight: auto }}
+        alt="GitHub"
       />
       <div className="col-4 mx-5">
         <div className="row">
           <ul className="col-5 list-unstyled m-3">
             <li className="p-2">
-              <h2>Stuff</h2>
+              <h2>Media</h2>
             </li>
             <li className="p-2">
-              <a href="#">This</a>
+              <a href="https://github.com/JuZankl">GitHub</a>
             </li>
             <li className="p-2">
-              <a href="#">Is</a>
+              <a href="https://linkedin.com/in/julian-zankl-4159b9296">
+                LinkedIn
+              </a>
             </li>
             <li className="p-2">
-              <a href="#">Some</a>
-            </li>
-            <li className="p-2">
-              <a href="#">Nice</a>
-            </li>
-            <li className="p-2">
-              <a href="#">Stuff</a>
+              <a href="https://www.instagram.com/juza0074/">Instagram</a>
             </li>
           </ul>
           <ul className="col-5 list-unstyled m-3">
             <li className="p-2">
-              <h2>Stuff</h2>
+              <h2>Tools</h2>
             </li>
             <li className="p-2">
-              <a href="#">This</a>
+              <a href="https://code.visualstudio.com">VSCode</a>
             </li>
             <li className="p-2">
-              <a href="#">Is</a>
+              <a href="https://getbootstrap.com">Bootstrap</a>
             </li>
             <li className="p-2">
-              <a href="#">Some</a>
+              <a href="https://react.dev">React</a>
             </li>
             <li className="p-2">
-              <a href="#">Nice</a>
-            </li>
-            <li className="p-2">
-              <a href="#">Stuff</a>
+              <a href="https://https://github.com">GitHub</a>
             </li>
           </ul>
         </div>

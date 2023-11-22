@@ -27,8 +27,8 @@ function Welcome() {
       <p>
         Für das Setup verwende ich GitHub Pages als Hosting-Plattform, um auf
         Webserver zu verzichten und einfache "statische Seiten" zu
-        veröffentlichen. Als Arbeitsumgebung nutze ich Node.js in Verbindung mit
-        dem Open-Source-Code-Editor VSCode. Als Frontend-Tool kommt React zum
+        veröffentlichen. Als Arbeitsumgebung nutze ich den
+        Open-Source-Code-Editor VSCode. Als Frontend-Tool kommt React zum
         Einsatz, und für einfache CSS- und Responsive-Bearbeitungen verwende ich
         Bootstrap als Frontend-Framework. Um Ihr eigenes Projekt zu starten,
         sollten Sie VSCode auf Ihrem Gerät installiert haben und über einen

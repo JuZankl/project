@@ -6,15 +6,20 @@ import GridPanel from "./GridPanel.js";
 import App from "./App";
 
 function Content() {
-  var path = window.location.pathname;
-  if (path === "/project") {
+  let pageValue = "home";
+  let urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("page")) {
+    pageValue = urlParams.get("page");
+  }
+
+  if (pageValue === "home") {
     return (
       <div className="row mt-5">
         <App />
         <Welcome />
       </div>
     );
-  } else if (path === "/project/dashboard") {
+  } else if (pageValue === "dashboard") {
     return <GridPanel />;
   }
 }
