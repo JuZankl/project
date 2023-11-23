@@ -14,9 +14,17 @@ function Content() {
 
   if (pageValue === "home") {
     return (
-      <div className="row mt-5">
+      <div className="row mt-5" id="content">
         <App />
-        <Welcome />
+        <div
+          className="d-none d-lg-block overflow-scroll bg-body-tertiary rounded-2  col-7 max-height-300"
+          data-bs-smooth-scroll="true"
+        >
+          <Welcome />
+        </div>
+        <div className="d-sm-block d-md-block d-lg-none bg-body-tertiary rounded-2  col-10 mx-5">
+          <Welcome />
+        </div>
       </div>
     );
   } else if (pageValue === "dashboard") {

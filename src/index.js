@@ -13,6 +13,7 @@ root.render(
   <React.StrictMode>
     <div className="container text-center">
       <Navbar />
+
       <Content />
     </div>
     <Impressum />

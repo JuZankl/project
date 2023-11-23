@@ -29,8 +29,22 @@ function GridPanel() {
       <div class="col-sm-6 mb-3 mb-sm-0 mt-3">
         <Card
           content="Adding more Info in the Home Welcome Comp"
-          status="Info"
+          status="Success"
           title="Welcome update"
+        />
+      </div>
+      <div class="col-sm-6 mb-3 mb-sm-0 mt-3">
+        <Card
+          content="Adding Info Cards About my Life"
+          status="Success"
+          title="MyLife Cards"
+        />
+      </div>
+      <div class="col-sm-6 mb-3 mb-sm-0 mt-3">
+        <Card
+          content="Make Info Cards About my Life Responsive"
+          status="Info"
+          title="MyLife Cards Resp"
         />
       </div>
     </div>

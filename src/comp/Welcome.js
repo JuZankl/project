@@ -1,9 +1,8 @@
+import Terminal from "./Terminal";
+
 function Welcome() {
   return (
-    <div
-      data-bs-smooth-scroll="true"
-      className="bg-body-tertiary rounded-2  col-7 overflow-scroll max-height-300"
-    >
+    <div>
       <h1>Hallo und Herzlich Willkommen auf dieser Website!</h1>
 
       <p>
@@ -43,16 +42,58 @@ function Welcome() {
         React-Anwendung. Dann erstellen wir eine verbindung mit GitHub Pages und
         zum Schluss fügen wir noch etwas in der der package.json datei hinzu
       </p>
-
-      <code>npx create-react-app myOwnName --save-dev</code>
+      <Terminal
+        code={`
+        npx create-react-app myOwnName --save-dev
+        npm install gh-pages --save-dev
+        `}
+        terminalName="VSCode Terminal"
+      />
+      <br />
+      <Terminal
+        code={`
+      'homepage': 'https://GitUsername.github.io/repo',
+        
+      'start': 'react-scripts start',
+      'build': 'react-scripts build',
+      'test': 'react-scripts test',
+      'eject': 'react-scripts eject',
+      'predeploy': 'npm run build',
+      'deploy': 'gh-pages -d build',`}
+        terminalName="package.json"
+      />
+      <br />
 
       <p>
         Wenn das Alles erledigt ist können wir dann unser Projekt im Developer
         Modus starten und sehen die standard generierte Seite von React in{" "}
         <a href="http://localhost:3000/repo">http://localhost:3000/repo</a>{" "}
-        wobei sie repo mit den von Ihnen erstellten Repository Namen ersetzen
+        wobei Sie repo mit den von Ihnen erstellten Repository Namen ersetzen
         müssen
       </p>
+      <Terminal
+        code={`
+        npm start
+        `}
+        terminalName="VSCode Terminal"
+      />
+      <br />
+      <p>
+        Um nun Ihre erstellte Reactbased Website im Internet findbar zu machen,
+        müssen Sie zuerst Ihr Project auf GitHub Publishen dannach können sie
+        den Link mit{" "}
+        <a href="https://GitUsername.github.io/repo">
+          https://GitUsername.github.io/repo
+        </a>{" "}
+        aufrufen und Ihre Website einsehen :)
+      </p>
+      <Terminal
+        code={`
+        npm run deploy
+        `}
+        terminalName="VSCode Terminal"
+      />
+      <br />
     </div>
   );
 }
