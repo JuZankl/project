@@ -3,10 +3,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../cssFiles/Content.css";
 import Welcome from "./Welcome.js";
 import GridPanel from "./GridPanel.js";
+import Calander from "./Calendar.js";
 import App from "./App";
 
 function Content() {
   let pageValue = "home";
+  let currentDate = new Date();
   let urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("page")) {
     pageValue = urlParams.get("page");
@@ -17,8 +19,9 @@ function Content() {
       <div className="row mt-5" id="content">
         <App />
         <div
-          className="d-none d-lg-block overflow-scroll bg-body-tertiary rounded-2  col-7 max-height-300"
+          className="d-none d-lg-block bg-body-tertiary rounded-2  col-7"
           data-bs-smooth-scroll="true"
+          style={{ maxHeight: "500px", overflowY: "scroll" }}
         >
           <Welcome />
         </div>
@@ -29,6 +32,8 @@ function Content() {
     );
   } else if (pageValue === "dashboard") {
     return <GridPanel />;
+  } else if (pageValue === "calander") {
+    return <Calander date={currentDate} />;
   }
 }
 
