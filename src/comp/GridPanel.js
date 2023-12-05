@@ -48,13 +48,13 @@ function GridPanel() {
         />
       </div>
       <div className="col-sm-6 mb-3 mb-sm-0 mt-3">
-        <Card content="Make a Calendar" status="Success" title="Calander" />
+        <Card content="Make a Calendar" status="Success" title="Calendar" />
       </div>
       <div className="col-sm-6 mb-3 mb-sm-0 mt-3">
         <Card
           content="Create Content in Calendar"
           status="Info"
-          title="Calander Content"
+          title="Calendar Content"
         />
       </div>
     </div>

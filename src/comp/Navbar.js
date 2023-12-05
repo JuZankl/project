@@ -6,8 +6,6 @@ function Navbar() {
   var urlachievements = `${window.location.origin}/project?page=dashboard`;
   var urlcalander = `${window.location.origin}/project?page=calander`;
 
-  
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -56,7 +54,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href={urlcalander}>
-                Calander
+                Calendar
               </a>
             </li>
           </ul>
